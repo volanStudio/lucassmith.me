@@ -1,0 +1,277 @@
+/****************************************************************************
+ * Site header & footer
+ */
+header {
+	.row {
+		width: 80%;
+		line-height: 4.5em;
+	}
+	.site_nav {
+		line-height: 2.5em;
+		border-top: $grey-color-light 1px solid;
+		ul {
+			margin: 0;
+			overflow: visible;
+		}
+		li {
+			list-style: none;
+			display: inline-block;
+			margin-top: -1px;
+			a {
+				margin-right: 1.25em;
+				padding: 0.65em 0;
+				.icon {
+    			opacity: 0.40;
+  				transition: opacity 0.2s ease-in-out;
+				}
+			}
+			a:hover .icon {
+				opacity: 0.5 !important;
+			}
+		}
+		.f--r a {
+			margin-right: 0.1em;
+			margin-left: 0.65em;
+		}
+		.active {
+			color: darken($text-color, 15%);
+			border-top: lighten($text-color, 15%) 1px solid;
+		}
+	}
+}
+
+footer {
+	font-size: $small-font-size;
+	margin-top: $spacing-unit*2;
+	.row {
+		width: 80%;
+	}
+	p {
+		border-top: 1px solid $grey-color-light;
+		margin: 0;
+		padding: $spacing-unit 0 $spacing-unit;
+	}
+}
+
+@include media-query($on-palm) {
+	header {
+			@include calc(width, "100% - (#{$spacing-unit} / 2)");
+		.row {
+			@include calc(width, "100% - (#{$spacing-unit} / 2)");
+		}
+	}
+
+	footer {
+			@include calc(width, "100% - (#{$spacing-unit} / 2)");
+		.row {
+			@include calc(width, "100% - (#{$spacing-unit} / 2)");
+		}
+	}
+}
+
+
+/****************************************************************************
+ * Page Content (Generic)
+ */
+
+section {
+
+	h1 {
+		font-family: 'Tungsten A', 'Tungsten B';
+		font-weight: 600;
+		font-style: normal;
+		font-size: 5.4em;
+		line-height: 1.1;
+		margin: $spacing-unit/2 auto $spacing-unit;
+		padding-top: $spacing-unit;
+		text-align: center;
+		text-transform: uppercase;
+		width: 80%;
+		a {
+			text-decoration: underline;
+		}
+	}
+
+	h2, h3, h4, h5, h6 {
+		text-align: left;
+	}
+
+	h2, h3, h4, h5, h6, p, ul {
+		width: 60%;
+		margin-left: auto;
+		margin-right: auto;
+		a {
+			text-decoration: underline;
+		}
+	}
+
+	li {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+
+	figure {
+		width: 90%;
+		padding: 5%;
+		p {
+			width: 90%;
+			margin: $spacing-unit/2 5%;
+		}
+	}
+
+	.feature {
+		width: 60%;
+		margin: 0 auto $spacing-unit/2 auto;
+	}
+
+	.pull-left {
+		float: left;
+		width: 40%;
+		margin: 0.5% $spacing-unit 0 0;
+	}
+
+}
+
+article {
+	padding-top: $spacing-unit;
+}
+
+article.projects {
+	.title {
+		width: 30%;
+		margin: $spacing-unit 5% $spacing-unit*4 5%;
+		float: left;
+	}
+	.description {
+		width: 55%;
+		margin: $spacing-unit 5% $spacing-unit*4 0;
+		float: left;
+	}
+	p {
+		margin: $spacing-unit/4 0;
+		width: 100%;
+	}
+	figcaption ul {
+		border-top: $grey-color-light 1px solid;
+		margin: $spacing-unit*1.25 0 0;
+		padding: $spacing-unit/4 0 0;
+		width: 100%;
+		li {
+			margin: $spacing-unit/8 0 0;
+		}
+	}
+
+}
+
+@include media-query($on-palm) {
+	section {
+
+		h1, h2, h3, h4, h5, h6, p, ul {
+			width: 90%;
+		}
+
+		h1 {
+			font-size: 4.2em;
+		}
+
+		figure {
+			width: 100%;
+			padding: 0;
+			p {
+				width: 100%;
+				margin: $spacing-unit/2 0%;
+			}
+		}
+
+		.feature {
+			width: 100%;
+		}
+
+		.pull-left {
+			float: none;
+			width: 100%;
+			margin: 0.5% 0 0 0;
+		}
+
+	}
+
+	article.projects {
+		.title {
+			width: 100%;
+			margin: $spacing-unit 0 $spacing-unit;
+			float: none;
+		}
+		.description {
+			width: 100%;
+			margin: $spacing-unit 0 $spacing-unit*4;
+			float: none;
+		}
+		figcaption ul {
+			border-top: $grey-color-light 1px solid;
+			border-bottom: $grey-color-light 1px solid;
+			margin: $spacing-unit/1.5 0;
+			padding: $spacing-unit/4 0;
+			width: 100%;
+			li {
+				margin: $spacing-unit/8 0 0;
+				&:last-of-type {
+					padding-bottom: $spacing-unit/4;
+				}
+			}
+		}
+		p {
+			width: 100%;
+			margin: $spacing-unit/2 0%;
+		}
+	}
+}
+
+
+/****************************************************************************
+ * Posts
+ */
+
+.inset-post {
+	padding: 0 0 $spacing-unit*4;
+	figure.tall {
+		@include calc(width, "50% - (#{$spacing-unit} / 2)");
+		float:left;
+		padding: $spacing-unit*2 0;
+		img {
+			border: none;
+			text-align: center;
+			margin: 0 auto;
+		}
+		figcaption {
+			text-align: center;
+		}
+	}
+	div.tall {
+		@include calc(width, "45% - (#{$spacing-unit} / 2)");
+		padding: $spacing-unit*4 $spacing-unit*2 0 0;
+		float:left;
+		p, h1, h2, h3, h4, h6 {
+			@include calc(width, "100%");
+			margin-left: 0;
+		}
+	}
+	figure.last {
+		padding-bottom: $spacing-unit*3;
+	}
+}
+
+@include media-query($on-palm) {
+	.inset-post {
+		figure.tall {
+			@include calc(width, "100% - (#{$spacing-unit} / 2)");
+			margin-left: 0;
+		}
+		div.tall {
+			@include calc(width, "100% - (#{$spacing-unit} / 2)");
+			margin: 0;
+			padding: 0;
+		}
+	}
+
+}

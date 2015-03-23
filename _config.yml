@@ -1,0 +1,14 @@
+# Site settings
+title: Lucas Smith - Designer
+email: lucas@volan.co
+description: > # I am a Designer living in Atlanta, GA and working for Weld in Los Altos, CA.
+baseurl: ""
+url: "http://www.lucassmith.me"
+#url: "http://localhost:4000"
+twitter_username: volanStudio
+github_username:  volanStudio
+
+# Build settings
+markdown: kramdown
+permalink: /:categories/:title
+excerpt_separator: "*(fig.1)*"
