@@ -1,0 +1,93 @@
+---
+layout: projects
+---
+
+<section>
+  <div class="row">
+
+    <article class="projects">
+
+      {% for post in site.categories.projects %}
+      <figure>
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
+          <img src="{{site.url}}/img/{{post.thumb}}" alt="">
+        </a>
+        <figcaption>
+          <div class="title">
+            <p><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></p>
+            <p><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">Case Study</a></p>
+            <ul>
+              <li>User Experience</li>
+              <li>Mobile UI</li>
+            </ul>
+          </div>
+          <div class="description">
+            <p>{{ post.short }}</p>
+          </div>
+        </figcaption>
+      </figure>
+      {% endfor %}
+
+      <figure>
+        <a href="http://sloanreview.mit.edu/"><img src="{{ site.url }}/img/pre-2013-MIT.jpg" alt=""></a>
+        <figcaption>
+          <div class="title">
+            <p>MIT: Sloan Management Review</p>
+            <p><a href="http://sloanreview.mit.edu/">sloanreview.mit.edu</a></p>
+            <ul>
+              <li>User Experience</li>
+              <li>Mobile Web UI</li>
+              <li>Custom Icon Font</li>
+            </ul>
+          </div>
+          <div class="description">
+            <p>MIT’s Sloan Management Review has archives going back 50+ years. In the interest of keeping their readers engaged, they undertook a project of massive proportions – moving all of that content toward a digital existence.</p>
+            <p>I was brought in at the earliest stages of wire framing that digital experience. We iterated a ton on what it means to be a magazine in the digital age. This approach led to much of our time being spent refining the reading experience and ultimately on a layout framework.</p>
+          </div>
+        </figcaption>
+      </figure>
+
+      <figure>
+        <a href="https://itunes.apple.com/us/app/ebay-motors/id424015720"><img src="{{ site.url }}/img/pre-2013-eBay.jpg" alt=""></a>
+        <figcaption>
+          <div class="title">
+            <p>eBay</p>
+            <p><a href="http://www.ebay.com">ebay.com</a></p>
+            <ul>
+              <li>User Experience</li>
+              <li>iOS UI</li>
+              <li>Android UI</li>
+            </ul>
+          </div>
+          <div class="description">
+            <p>I had the opportunity to help design a slew of new features that were added to the eBay Motors apps (both Android and iOS). I worked in conjunction with their in-house designer team to wire-frame concepts for and deliver a pixel-perfect (ha) implementation of the Motors iOS app.</p>
+            <p>We also took the iOS app that we designed and brought it over to Android – this was an eye opening experience with respect to the differences between the two ecosystems. I really learned a lot about collaborating with a large team and the communication it takes to juggle separate engineering teams working on the same project.</p>
+          </div>
+        </figcaption>
+      </figure>
+
+      <figure>
+        <a href="https://www.patient-pad.com/"><img src="{{ site.url }}/img/pre-2013-patientPad.jpg" alt=""></a>
+        <figcaption>
+          <div class="title">
+            <p>Patient Pad</p>
+            <p><a href="https://www.patient-pad.com/">patient-pad.com</a></p>
+            <ul>
+              <li>User Experience</li>
+              <li>Tablet Interface</li>
+              <li>iOS UI</li>
+            </ul>
+          </div>
+          <div class="description">
+            <p>The client came to me with an MVP that needed to be “skinned”. It was quickly agreed that we needed to re-architect some of the app based on feedback from users. I learned a ton about having a working prototype and getting your product into the hands of your users.</p>
+            <p>After ingesting all of the feedback we were able to get the revised prototype back into the hands of some testers. Again, getting almost instant user feedback was such an eye-opening experience. So much iteration, such solid feedback.</p>
+          </div>
+        </figcaption>
+      </figure>
+
+    </article>
+
+  </div>
+</section>
+
+
