@@ -30,7 +30,7 @@ This really started to come together over a few weeks in January/February of 201
 
 <div class="tall">
 
-  <h2>Lessons learned</h2>
+  <h2>Lessons Learned</h2>
 
   <p>Making wide-reaching apps is hard. Who do you test with? What is the target user’s interest in an app like this? Where do we go when we only get general feedback?</p>
 
