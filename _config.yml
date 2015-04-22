@@ -12,3 +12,4 @@ github_username:  volanStudio
 markdown: kramdown
 permalink: /:categories/:title
 excerpt_separator: "*(fig.1)*"
+exclude: ['s3_website.yml', 'README.md']
