@@ -7,17 +7,19 @@ img:        Osito-1-action.jpg
 thumb:      thumb-Osito.jpg
 short:      Osito was an app designed to simplify interactions with your phone. That is broad and pretty vague - ultimately, we were trying to push users information when they needed it. The idea is really more akin to a digital personal assistant.
 ---
-Osito was an app designed to simplify interactions with your phone. That is broad and pretty vague - ultimately, we were trying to push users information when they needed it. The idea is really more akin to a digital personal assistant.
+Osito was designed to simplify interactions with your phone. Ultimately, we were trying to push users information when they needed it. The idea is really more akin to a digital personal assistant.
 
 ##How it began
 
-I joined the team as Designer when the product was taking shape. The app had a rough UI and some branding under a different name. I was tasked with designing the app, the marketing site, and eventually, the new brand.
+I joined the team as Designer when the product was just starting to take shape. The app had a rough UI and some branding under a different name. I was tasked with designing the app, the marketing site, and eventually, the new brand.
 
 We were still adding “triggers” and actions. As we added the triggers, we started to uncover how much data the average person truly processes on their mobile device. Juggling emails, chats, receipts, weather, traffic, etc. becomes a large scale operation with just a small number of contact points.
 
 ##Initial Designs
 
-Pretty early on, I started to drive the team toward a card-based interface *(fig. 1)* so that we could handle the design of each trigger in a more hierarchical way. This type of data imbues itself to a quick, at-a-glance interaction. Once you start putting disparate data into the mix, you get some long absorption times. We quickly decided to build a grid-based card system with standardized button / action placement.
+After sketching some concepts I started to drive the team toward a card-based interface *(fig. 1)*. It became very clear that each module was independent of the others. Each module needed a distinct hierarchy.
+
+Osito's text-heavy data needed to present as quick, at-a-glance interactions. Once you start putting disparate data into the mix, you get some long absorption times. We quickly decided to build a grid-based card system with standardized button / action placement and a strict typographical hierarchy.
 
 <figure>
   <img src="{{ site.url }}/img/Osito-2-cards.jpg">
@@ -26,7 +28,7 @@ Pretty early on, I started to drive the team toward a card-based interface *(fig
   </figcaption>
 </figure>
 
-This really started to come together over a few weeks in January/February of 2013. We were targeting an April release which made this visual overhaul a bit harrowing. As a result, I happened to jump in the iOS repo and start hacking away on the welcome flow. This was actually the first time I’d opened Xcode - it was a bit daunting, but really fun.
+This started to come together over a few weeks in January/February of 2013. We were targeting an April release which made this visual overhaul a bit harrowing. As a result, I happened to jump in the iOS repo and start hacking away on the welcome flow. This was actually the first time I’d opened Xcode - it was a bit daunting, but really fun.
 
 <div class="tall">
 
@@ -53,9 +55,7 @@ This really started to come together over a few weeks in January/February of 201
 
 ##Conclusion
 
-Osito was an attempt to simplify interacting with your phone and became an act of reassuring the user that we were paying attention. Osito lacked the feedback loop that users crave. Bolting on a feedback loop ultimately didn’t work.
-
-Eventually we did pivot toward our strongest trigger - email. That is a story for a different case study…
+Osito was an attempt to simplify interacting with your phone and became an act of reassuring the user that we were paying attention. Osito lacked the feedback loop that users crave. Bolting on a feedback loop ultimately didn’t work. Eventually we did pivot toward our strongest trigger - email. That is a story for a different case study…
 
 ##Design Details
 
