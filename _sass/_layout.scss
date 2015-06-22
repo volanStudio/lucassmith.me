@@ -55,6 +55,9 @@ header {
 		&:last-of-type {
 			float: right;
 		}
+		&:first-of-type {
+			float: left;
+		}
 	}
 	a {
 		color: $brand-color;
