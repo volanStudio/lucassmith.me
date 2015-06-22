@@ -5,34 +5,38 @@
 
 // Our variables
 
-$base-font-family: 'Whitney SSm A', 'Whitney SSm B', "Helvetica Neue", Helvetica, Arial, sans-serif;
-$base-font-size:   17px;
-$base-font-weight: 400;
-$small-font-size:  $base-font-size * 0.825;
-$base-line-height: 1.5;
+$base-font-family:    'Whitney SSm A', 'Whitney SSm B', "Helvetica Neue", Helvetica, Arial, sans-serif;
+$base-font-size:      17px;
+$base-font-weight:    400;
+$small-font-size:     $base-font-size * 0.825;
+$base-line-height:    1.5;
 
-$header-font-family: 'Whitney SSm A', 'Whitney SSm B', "Helvetica Neue", Helvetica, Arial, sans-serif;
-$header-font-weight: 400;
-$header-line-height: 1.5;
+$header-font-family:  'Whitney SSm A', 'Whitney SSm B', "Helvetica Neue", Helvetica, Arial, sans-serif;
+$header-font-weight:  400;
+$header-line-height:  1.5;
 
 /* $header-font-family: 'Chronicle Deck A', 'Chronicle Deck B', "Helvetica Neue", Helvetica, Arial, sans-serif;
 $header-font-weight: 800;
 $header-line-height: 1.5; */
 
-$spacing-unit:     30px;
+$spacing-unit:        32px;
 
-$header-color:     #4d4d4d;
-$text-color:       #7d7d7d;
-$background-color: #fff;
-$brand-color:      #20BFD4;
+$header-color:        rgba(0, 0, 0, 0.70);
+$text-color:          rgba(0, 0, 0, 0.55);
+$background-color:    rgba(255, 255, 255, 1.0);
+$brand-color:         rgba(9, 164, 179, 1.0);
+$brand-color-hover:   rgba(9, 164, 179, 0.9);
 
-$grey-color:       #b3b3b3;
-$grey-color-light: lighten($grey-color, 18%);
-$grey-color-lighter: lighten($grey-color, 28%);
-$grey-color-dark:  darken($grey-color, 10%);
+$grey-color:          rgba(0, 0, 0, 0.30);
+$grey-color-light:    rgba(0, 0, 0, 0.09);
+$grey-color-lighter:  rgba(0, 0, 0, 0.03);
+$grey-color-dark:     rgba(0, 0, 0, 0.40);
 
-$on-palm:          600px;
-$on-laptop:        1000px;
+$border-solid:        1px solid $grey-color-light;
+$border-dashed:       1px dashed $grey-color-light;
+
+$on-palm:             600px;
+$on-laptop:           1000px;
 
 
 

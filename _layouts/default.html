@@ -5,11 +5,23 @@
 
   <body>
 
+    {% include alert.html %}
+
     {% include header.html %}
 
     {{ content }}
 
     {% include footer.html %}
+
+    <script>
+      window.onload = function() {
+        console.log(document.referrer);
+        if (document.referrer == "http://volan.co/") {
+          theAlert = document.querySelector(".alert");
+          theAlert.className = theAlert.className + " slide-in";
+        }
+      }
+    </script>
 
   </body>
 

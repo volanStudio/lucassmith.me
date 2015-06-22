@@ -8,7 +8,7 @@ header {
 	}
 	.site_nav {
 		line-height: 2.5em;
-		border-top: $grey-color-light 1px solid;
+		border-top: $border-solid;
 		ul {
 			margin: 0;
 			overflow: visible;
@@ -40,6 +40,37 @@ header {
 	}
 }
 
+.alert {
+	background: $grey-color-lighter;
+	border-top: $border-solid;
+	border-bottom: $border-solid;
+	font-size: $small-font-size;
+	padding: $spacing-unit / 2 0 $spacing-unit / 1.75;
+	transition: all 0.3s ease-in-out;
+	margin-top: -57px;
+	p {
+		line-height: 1.5;
+		margin: 0;
+		float: left;
+		&:last-of-type {
+			float: right;
+		}
+	}
+	a {
+		color: $brand-color;
+		&:hover {
+			color: $brand-color-hover;
+		}
+		&:visited {
+			color: $brand-color;
+		}
+	}
+}
+
+.slide-in {
+	margin-top: 0px;
+}
+
 footer {
 	font-size: $small-font-size;
 	margin-top: $spacing-unit*2;
@@ -47,7 +78,7 @@ footer {
 		width: 80%;
 	}
 	p {
-		border-top: 1px solid $grey-color-light;
+		border-top: $border-solid;
 		margin: 0;
 		padding: $spacing-unit 0 $spacing-unit;
 	}
@@ -96,7 +127,7 @@ section {
 	}
 
 	h2, h3, h4, h5, h6, p, ul {
-		width: 60%;
+		width: 66%;
 		margin-left: auto;
 		margin-right: auto;
 		a {
@@ -120,7 +151,7 @@ section {
 	}
 
 	.feature {
-		width: 60%;
+		width: 90%;
 		margin: 0 auto $spacing-unit/2 auto;
 	}
 
@@ -152,7 +183,7 @@ article.projects {
 		width: 100%;
 	}
 	figcaption ul {
-		border-top: $grey-color-light 1px solid;
+		border-top: $border-solid;
 		margin: $spacing-unit*1.25 0 0;
 		padding: $spacing-unit/4 0 0;
 		width: 100%;
@@ -207,8 +238,8 @@ article.projects {
 			float: none;
 		}
 		figcaption ul {
-			border-top: $grey-color-light 1px solid;
-			border-bottom: $grey-color-light 1px solid;
+			border-top: $border-solid;
+			border-bottom: $border-solid;
 			margin: $spacing-unit/1.5 0;
 			padding: $spacing-unit/4 0;
 			width: 100%;
