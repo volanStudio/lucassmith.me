@@ -89,14 +89,18 @@ footer {
 
 @include media-query($on-palm) {
 	header {
-			@include calc(width, "100% - (#{$spacing-unit} / 2)");
+		@include calc(width, "100% - (#{$spacing-unit} / 2)");
 		.row {
 			@include calc(width, "100% - (#{$spacing-unit} / 2)");
 		}
 	}
 
+	.alert {
+		width: 100%;
+	}
+
 	footer {
-			@include calc(width, "100% - (#{$spacing-unit} / 2)");
+		@include calc(width, "100% - (#{$spacing-unit} / 2)");
 		.row {
 			@include calc(width, "100% - (#{$spacing-unit} / 2)");
 		}
