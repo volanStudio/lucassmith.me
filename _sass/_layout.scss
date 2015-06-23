@@ -6,7 +6,18 @@ header {
 		width: 80%;
 		line-height: 4.5em;
 	}
+	a, p {
+		display: block;
+		float: left;
+	}
+	p {
+		float: right;
+		margin: 0;
+	}
 	.site_nav {
+		display: block;
+		float: left;
+		width: 100%;
 		line-height: 2.5em;
 		border-top: $border-solid;
 		ul {
@@ -18,8 +29,9 @@ header {
 			display: inline-block;
 			margin-top: -1px;
 			a {
+				border-top: $border-clear;
 				margin-right: 1.25em;
-				padding: 0.65em 0;
+				padding: 0.625em 0;
 				.icon {
     			opacity: 0.40;
   				transition: opacity 0.2s ease-in-out;
@@ -35,7 +47,7 @@ header {
 		}
 		.active {
 			color: darken($text-color, 15%);
-			border-top: lighten($text-color, 15%) 1px solid;
+			border-top: $border-dark;
 		}
 	}
 }
@@ -149,11 +161,31 @@ section {
 	}
 
 	figure {
-		width: 90%;
-		padding: 5%;
-		p {
+		width: 100%;
+		padding: 0 0 $spacing-unit 0;
+		img {
 			width: 90%;
-			margin: $spacing-unit/2 5%;
+			margin: 0 auto $spacing-unit;
+		}
+		a {
+			display: block;
+			width: 90%;
+			margin: 0 auto;
+			img {
+				width: 100%;
+				margin: 0 auto $spacing-unit;
+			}
+		}
+		figcaption {
+			a {
+				display: inline;
+				width: 100%;
+			}
+		}
+		p {
+			width: 66%;
+			margin-right: auto;
+			margin-left: auto;
 		}
 	}
 
@@ -270,7 +302,6 @@ article.projects {
  */
 
 .inset-post {
-	padding: 0 0 $spacing-unit*4;
 	figure.tall {
 		@include calc(width, "50% - (#{$spacing-unit} / 2)");
 		float:left;
@@ -309,6 +340,10 @@ article.projects {
 			margin: 0;
 			padding: 0;
 		}
+	}
+
+	.on-desktop {
+		display: none;
 	}
 
 }

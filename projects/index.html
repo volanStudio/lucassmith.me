@@ -17,12 +17,13 @@ layout: projects
             <p><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></p>
             <p><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">Case Study</a></p>
             <ul>
-              <li>User Experience</li>
-              <li>Mobile UI</li>
+              {% for role in post.roles %}
+              <li>{{ role }}</li>
+              {% endfor %}
             </ul>
           </div>
           <div class="description">
-            <p>{{ post.short }}</p>
+            <p>{{ post.excerpt | remove: '<p>' | remove: '</p>' }}</p>
           </div>
         </figcaption>
       </figure>

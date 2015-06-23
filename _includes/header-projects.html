@@ -1,6 +1,9 @@
 <header>
   <div class="row">
     <a href="/">Lucas Smith, Designer</a>
+    {% if page.categories contains 'projects' %}
+    <p><span class="on-desktop">Project: </span>{{ page.title }}</p>
+    {% endif %}
     <nav class="site_nav">
       <ul>
         <li><a href="/projects" class="active">Projects</a></li>

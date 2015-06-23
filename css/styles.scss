@@ -32,8 +32,10 @@ $grey-color-light:    rgba(0, 0, 0, 0.09);
 $grey-color-lighter:  rgba(0, 0, 0, 0.03);
 $grey-color-dark:     rgba(0, 0, 0, 0.40);
 
-$border-solid:        1px solid $grey-color-light;
+$border-clear:        1px solid rgba(0, 0, 0, 0);
+$border-dark:         1px solid $grey-color-dark;
 $border-dashed:       1px dashed $grey-color-light;
+$border-solid:        1px solid $grey-color-light;
 
 $on-palm:             600px;
 $on-laptop:           1000px;
