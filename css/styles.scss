@@ -28,14 +28,17 @@ $brand-color:         rgba(9, 164, 179, 1.0);
 $brand-color-hover:   rgba(9, 164, 179, 0.9);
 
 $grey-color:          rgba(0, 0, 0, 0.30);
-$grey-color-light:    rgba(0, 0, 0, 0.09);
-$grey-color-lighter:  rgba(0, 0, 0, 0.03);
+
 $grey-color-dark:     rgba(0, 0, 0, 0.40);
+$grey-color-medium:   rgba(0, 0, 0, 0.19);
+$grey-color-light:    rgba(0, 0, 0, 0.09);
+$grey-color-lighter:  rgba(0, 0, 0, 0.02);
 
 $border-clear:        1px solid rgba(0, 0, 0, 0);
 $border-dark:         1px solid $grey-color-dark;
 $border-dashed:       1px dashed $grey-color-light;
 $border-solid:        1px solid $grey-color-light;
+$border-dotted:       1px dotted $grey-color-light;
 
 $on-palm:             600px;
 $on-laptop:           1000px;

@@ -10,28 +10,33 @@ roles:
   - Mobile UI
 
 ---
-Osito was a digital personal assistant. The implications of that statement alone are huge. Can we push users information when they need it? If contextual computing is the future of interaction it is a big problem with many nuanced implementaiton problems to be solved. Sounds fun, right?
+
+Osito was the future of the digital personal assistant. The implications of that are huge. We tried to push users information right when they needed it. Contextual computing is the future of our interaction with our devices. It is a problem with nuanced implementation concerns. I've been thinking about proactive machines since college &ndash; it was incredibly fun work.
 
 ##How it began
 
 I joined the team as Designer when our product was just taking shape. The app had a rough UI and some branding under a different name. I was tasked with designing the app (experience, ui, visual design), the marketing site, and the new brand.
 
-#### We were still adding “triggers“ and “actions“. -- *Huh?*
+#### “triggers“ and “actions“. -- *Wait, huh?*
 
-Imagine you have a personal assistant and he can read your email. He'd have lots of info about you since you work together 40+ hours of the week. An email from Bob might be a trigger to schedule a meeting if his project is over budget. Or there is a weather event that is going to make you late to your next meeting, you'd expect an assistant to let you know when to leave.
+Imagine you have a personal assistant and he can read your email. He'd have lots of info about you since you live together 40+ hours every week. An email from Nancy might be a trigger you to schedule a meeting if her project is over budget. Or there might be a weather event that is going to make you late to your next meeting. You'd expect an assistant to let you know when to leave.
 
-As we added the triggers, we started to uncover how much data the average person truly processes on their mobile device. Juggling emails, chats, receipts, weather, traffic, etc. becomes a large scale operation with just a small number of contact points. We can handle a bunch of that with signals coming from a phone - location (weather & traffic), email (receipts & meeting invites), and calendar (meetings & general scheduling).
+As we added the triggers (events that signal our systemt to act), we started to uncover how much data the average person truly processes on their mobile device. Emails, chats, receipts, weather, traffic, etc. become a large scale operation for even the most tech-averse among us.
 
 ##Initial UI Designs
 
 After sketching some UI concepts I started to drive the team toward a card-based interface *(fig. 1)*. It became very clear that each module was independent of the others. Each module needed a distinct hierarchy. To Photoshop!
 
-Osito's text-heavy data needed to present as quick, at-a-glance interactions. Once you start putting disparate data into the mix, you get some long absorption times. We quickly decided to build a grid-based card system with standardized button / action placement and a strict typographical hierarchy.
+The text-heavy data needed to be presented quickly. Once you start putting disparate data into the mix, you get some long absorption times (reading, not acting). We quickly decided to build a grid-based card system with standardized button / action placement and a strict typographical hierarchy.
+
+The goal was twofold &ndash; give the user a block they could remember and simplify things on the engineering side. This was accomplished by a mix of color, type, and infographics (maps, charts, etc.). We always got great feedback on this side of the app.
+
+People were less happy about with our communication of upcoming events. These half-baked triggers were just that; half-baked as-in we can't predict traffic. The result is either too many notifications or omitting these notifications entirely.
 
 <figure>
   <img src="{{ site.url }}/img/Osito-2-cards.jpg">
   <figcaption>
-    <p><em>(fig. 1)</em> I tried to capture the fun in these interactions with color and layout that skews happy.</p>
+    <p><em>(fig. 1)</em> I tried to capture the fun in these interactions with color and layout. This was early days of "Proactive Computing" for consumers. Osito always tried to be friendly first.</p>
   </figcaption>
 </figure>
 
@@ -41,11 +46,11 @@ This started to come together over a few weeks in January/February of 2013. We w
 
   <h2>Lessons Learned</h2>
 
-  <p>Making wide-reaching apps is hard. Who do you test with? What is the target user’s interest in an app like this? Where do we go when we only get general feedback?</p>
+  <p>Making wide-reaching consumer apps is hard. Who do you test with? What is the target user’s interest in an app like this? Where do we go when we only get general feedback?</p>
 
   <p>I think that building Osito taught the entire team about focus in the sphere of a product. We lacked it; we tried to design for very broad uses and it burned us. Once the app was released, we got some really great feedback that made us rethink the entirety of what we were building.</p>
 
-  <h4>Half-way to a Pivot</h4>
+  <h4>Halfway to a Pivot</h4>
 
   <p>We learned that users wanted control - without it they felt adrift in our system. Users had a hard time relying on Osito to get them the data they needed. Users wanted to know *what* was being tracked and that it *was* being tracked at a threshold they thought prudent.</p>
 
@@ -66,12 +71,12 @@ Osito was an attempt to simplify interacting with your phone and became an act o
 
 ##Design Details
 
-While I typically start with wireframes, this project warranted a different approach. Features were sketched on whiteboards and ocassionally some scrap paper. Those were then put through the photoshop wringer immediately. It made for some fast turnarounds, but process is a thing that you need to weigh when moving this fast.
+While I typically start with wireframes, this project warranted a different approach. Features were sketched on whiteboards and occasionally paper. Those were then put through the photoshop wringer almost immediately. It made for some fast turnarounds, but process is a thing that you need to weigh when moving this fast.
 
 <figure class="details">
   <img src="{{ site.url }}/img/Osito-4-marketing.jpg">
   <figcaption>
-    <p><em>(fig. 3)</em> Appstore Feature: Fun stuff around the brand.</p>
+    <p><em>(fig. 3)</em> App Store Feature: Fun stuff around the brand. The original name was Sherpa, but when we found out we'd be featured all of our assets were in this vein and we ended up just swapping the name since we had ~12 hours lead-time to make the change.</p>
   </figcaption>
 </figure>
 
@@ -99,15 +104,15 @@ While I typically start with wireframes, this project warranted a different appr
 <figure class="details last">
   <img src="{{ site.url }}/img/Osito-7-action.jpg">
   <figcaption>
-    <p><em>(fig. 7)</em> Push notification were one of the major interfaces for the app. The team kept a running spreadshet with new phrases to try to capture the spirit of Osito.</p>
+    <p><em>(fig. 7)</em> Push notification were one of the major interfaces for the app. The team kept a running spreadsheet with new phrases to try to capture the spirit of Osito.</p>
   </figcaption>
 </figure>
 
 ##Website: Design/Build
 
-I went looking for comps of the site and I can't find any; I think this was completely designed in the browser with the exception of the graphic assets. The site was featured on a few inspiration sites as an example of "well executed minimal design".
+I went looking for comps of the site and I can't find any; I think this was completely designed in the browser with the exception of the graphic assets. The site was featured on a few inspiration sites as an example of "minimal design". Launched right before iOS7 was released kicking us all adown the minimal path.
 
-This was the first time I used Jekyll + SASS. Our iOS engineer was a big fan of the Jekyll. I had heard of SASS before, but the combo really is amazing. They are still a big part of my workflow for web projects.
+This was my first experience with Jekyll + SASS. Our iOS engineer was a big fan of Jekyll. I had heard of SASS before, but the combo really is amazing. They are still a big part of my workflow for web projects.
 
 <figure class="details">
   <img src="{{ site.url }}/img/Osito-9-website.jpg">
@@ -117,8 +122,9 @@ This was the first time I used Jekyll + SASS. Our iOS engineer was a big fan of 
 </figure>
 
 <figure class="details">
-  <img src="{{ site.url }}/img/Osito-10-website.jpg">
+  <img src="{{ site.url }}/img/Osito-11-website.gif">
   <figcaption>
     <p><em>(fig. 9)</em> This slider was awesome for explaining the cards and the underlying tech.</p>
   </figcaption>
 </figure>
+

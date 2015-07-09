@@ -1,0 +1,142 @@
+---
+layout:     project
+title:      "Weld"
+date:       2015-06-23 1:02:02
+categories: projects
+img:        Weld-0.9-00-action.jpg
+thumb:      thumb-Weld-0.9.jpg
+roles:
+  - User Experience
+  - Mobile UI
+  - iOS Engineering
+
+---
+
+Weld is a proactive computing project. I am again working on a product category that I find exciting. We focused on a single (successful) vertical from our previous product, email. Email as a platform gets put into the public utility category, but it is rich with data that can make or break your day.
+
+In college I worked on the Mozilla Calendar Project. That makes me feel right at home trying to solve for calendar UI designs. That project is where I found out I wanted to work on the design side of software.
+
+## Scheduling is still hard
+
+A very high percentage of users complained (in an informal study) that getting a meeting on their calendar takes too long. People inherently come to productivity tools with a bias, the problem is unique for every user and their habits. The first thing I wanted to tackle was how to be platform agnostic. I want users to continue to use calendar and email effectively without the pain points.
+
+We white boarded, chatted, and sketched feverishly for a week to validate assumptions that this was the first problem to tackle. It was messy, contentious, and pretty fun. We eventually realized we were coming back to a really early sketch [(fig. 1)](#fig1) to "proof" our newest ideas.
+
+<figure class="sketch" id="fig1">
+  <img src="{{ site.url }}/img/Weld-0.9-01-wire.jpg" alt="" class="technical">
+  <figcaption>
+    <p><em>(fig. 1)</em></p>
+    <p>My earliest sketches always come back to a UI flow shorthand (ht <a href="https://signalvnoise.com/posts/1926-a-shorthand-for-designing-ui-flows" alt="UI shorthand">Ryan Singer</a>).</p>
+  </figcaption>
+</figure>
+
+After this initial phase of ideation, I iterated for weeks on wireframes, flows, layouts, and UI designs. The engineering team set about building the backend to handle the product shift. We jettisoned lots of code for the other "triggers" we had built for [Osito]({{site.url}}/projects/osito). Here are some of the UI iterations for a date/time picker. Calendar inline with email just feels right, although some of these are hastily sketched ideas.
+
+<figure id="fig2">
+  <img src="{{ site.url }}/img/Weld-0.9-02-ui.jpg" alt="">
+  <figcaption>
+    <p><em>(fig. 2)</em></p>
+    <p>UI designs were tricky. A colorful saying is "trying to fit 10lb of s!$@ into a 5lb bag". It was eventually wrangled into a manageable state through contextual computing.</p>
+  </figcaption>
+</figure>
+
+## Who knows enough Objective-C? *- __I do!__*
+
+We built lots of prototypes in framer (before it was an app) and in iOS. This is actually where I picked up programming for iOS. We struggled to find a great iOS engineer to join the team. In the interim, I decided to learn as much as I could about UIKit. I was able to turn these prototypes into shippable code.
+
+<figure id="fig3">
+  <img src="{{ site.url }}/img/Weld-0.9-03-ios.gif" alt="" width="320" class="skinny">
+  <figcaption>
+    <p><em>(fig. 3)</em></p>
+    <p>I built something with Xcode <em>and it now lives in the app store</em>. It is messy, but it works and it was so much fun to create.</p>
+    <p><small>Sidenote: That GIF was made with a <a href="https://github.com/volanStudio/pioppi/tree/master/python/gifc">fun little python script</a> I built. It is dumb, but it does what I want...</small></p>
+  </figcaption>
+</figure>
+
+We eventually shipped a scheduling app that also turned your email into a more chat-like interface. It is streamlined and fun, if not a wee-bit buggy. I'm not an engineer, I'm primarily a guy who is passionate about making software. I hope to be building more of my designs, but I am definitely more designer than engineer.
+
+
+## Conclusion
+
+Product Design on a small team is not about camping out in Photoshop, Sketch, or some other design tool. It is about juggling 5 tools that are on fire and when you drop them everyone's life is a little better. I think there are 10-12 pretty well hashed out designs and 3x that many concepts in the trash. But the final design always shines a bit brighter from each iteration. Finding the balance between iteration and shipping has been the toughest part of working on product at a small startup.
+
+The app has been replaced with a newer stripped down [version](https://itunes.apple.com/us/app/weld-actions-made-easy/id834807261). The new direction isn't a traditional app - it is an interactive agent that can be hooked into anything that is text-based communication. The new iOS app is effectively just fetching the endpoints from our web / email app.
+
+The changes are certainly worthy of a fresh case study :).
+
+## Design Details
+
+<figure id="fig4">
+  <img src="{{ site.url }}/img/Weld-0.9-09-CalendarPicker.jpg" alt="">
+  <figcaption>
+    <p><em>(fig. 4)</em></p>
+    <p>Calendar picker (v0.3), (v0.7), and (v0.9).</p>
+    <p>One of the omly truly custom UI components was a draggable calendar picker. It had many iterations, I've included 1.5 of them here. This was one of the items that got prototyped the most. Nailing the feel of picking a time naturally on a mobile screen was surprisingly complex. After designing the "dragger" a popular calendar app shipped a very similar component. </p>
+  </figcaption>
+</figure>
+
+<figure id="fig5">
+  <img src="{{ site.url }}/img/Weld-0.9-08-Suggestion.jpg" alt="">
+  <figcaption>
+    <p><em>(fig. 5)</em></p>
+    <p>Proposal Received flow (v1.0).</p>
+    <p>We really try to shorten the distance between a scheduling request and adding an ICS to your calendar. This is the "optimal" flow. A suggestion comes in, you add it to your calendar, and Weld sends an ICS invite on to the other party. We keep you informed of the status of that proposal via push notification.</p>
+  </figcaption>
+</figure>
+
+<figure id="fig6">
+  <img src="{{ site.url }}/img/Weld-0.9-07-welcomeFlow.jpg" alt="">
+  <figcaption>
+    <p><em>(fig. 6)</em></p>
+    <p>Early welcomeflow (v0.7).</p>
+    <p>I'd eventually code and ship this - my first real forray into iOS engineering. These screens show the same headline, but the animation btween hand states was advanced with a swipe. I should really make a gif of this...</p>
+  </figcaption>
+</figure>
+
+<figure id="fig7">
+  <img src="{{ site.url }}/img/Weld-0.9-06-schedulingFlow.jpg" alt="">
+  <figcaption>
+    <p><em>(fig. 7)</em></p>
+    <p>Scheduling flow for multiple users (v0.5).</p>
+    <p>Our research showed that meetings for greater that 4 people are not normally scheduled over email. Weld optimizes for the most common scenarios (2-4 people).</p>
+  </figcaption>
+</figure>
+
+<figure id="fig8">
+  <img src="{{ site.url }}/img/Weld-0.9-05-shipped.jpg" alt="">
+  <figcaption>
+    <p><em>(fig. 8)</em></p>
+    <p>App store screenshots (v0.9).</p>
+    <p>A finished app ;).</p>
+  </figcaption>
+</figure>
+
+##Website
+
+I designed and built the responsive website for this app as well (jekyll, sass, js, and \<video\>) and executed all of the marketing materials (emails, press kit, etc.). [It is live](http://www.weldai.com) for a short while longer (maybe until Aug. 2015) - I'll try to archive it somewhere. Once the link is gone these images will serve as proof of its existence.
+
+<figure id="fig9">
+  <img src="{{ site.url }}/img/Weld-0.9-10-landing.jpg" alt="">
+  <figcaption>
+    <p><em>(fig. 9)</em></p>
+    <p>The site features some autoplaying video tags and smoe fonts form typography.com. I'm in love with Whitney. Heck, even this is set in Whitney.</p>
+  </figcaption>
+</figure>
+
+<figure id="fig10">
+  <img src="{{ site.url }}/img/Weld-0.9-11-features.jpg" alt="">
+  <figcaption>
+    <p><em>(fig. 10)</em></p>
+    <p>These layouts were driven by trying to optimize viewing on desktop and on mobile with the same assets. Videos are big and we didn't have the time or resources to build an adaptive site, so we opted for full responsive.</p>
+  </figcaption>
+</figure>
+
+<figure id="fig11">
+  <img src="{{ site.url }}/img/Weld-0.9-12-responsive.jpg" alt="">
+  <figcaption>
+    <p><em>(fig. 11)</em></p>
+    <p>Responsive layouts of the two above pages, respectively. During development of the site the iPhone 6 and 6+ were released. I moved the main nav to the bottom of the responsive pages in an effort to make it more hittable on the larger form factor.</p>
+  </figcaption>
+</figure>
+
+

@@ -34,7 +34,7 @@ header {
 				padding: 0.625em 0;
 				.icon {
     			opacity: 0.40;
-  				transition: opacity 0.2s ease-in-out;
+  				transition: opacity 0.2s ease-out;
 				}
 			}
 			a:hover .icon {
@@ -60,10 +60,11 @@ header {
 	padding: $spacing-unit / 2 0 $spacing-unit / 1.75;
 	transition: all 0.3s ease-in-out;
 	margin-top: -57px;
+	display: none;
 	p {
+		float: left;
 		line-height: 1.5;
 		margin: 0;
-		float: left;
 		&:last-of-type {
 			float: right;
 		}
@@ -72,6 +73,8 @@ header {
 		}
 	}
 	a {
+		display: inline;
+		float: initial;
 		color: $brand-color;
 		&:hover {
 			color: $brand-color-hover;
@@ -83,6 +86,7 @@ header {
 }
 
 .slide-in {
+	display: block;
 	margin-top: 0px;
 }
 
@@ -96,14 +100,30 @@ footer {
 		border-top: $border-solid;
 		margin: 0;
 		padding: $spacing-unit 0 $spacing-unit;
+		small {
+			float: right;
+			img {
+				width: 20px;
+				margin-top: - 1px;
+			}
+		}
+		a {
+			color: $grey-color-medium;
+			&:hover {
+				text-decoration: underline;
+				color: $text-color;
+			}
+			&:visited {
+				color: $grey-color-medium;
+			}
+		}
 	}
 }
 
 @include media-query($on-palm) {
 	header {
-		@include calc(width, "100% - (#{$spacing-unit} / 2)");
 		.row {
-			@include calc(width, "100% - (#{$spacing-unit} / 2)");
+			@include calc(width, "100% - (#{$spacing-unit})");
 		}
 	}
 
@@ -112,9 +132,8 @@ footer {
 	}
 
 	footer {
-		@include calc(width, "100% - (#{$spacing-unit} / 2)");
 		.row {
-			@include calc(width, "100% - (#{$spacing-unit} / 2)");
+			@include calc(width, "100% - (#{$spacing-unit})");
 		}
 	}
 }
@@ -154,6 +173,10 @@ section {
 		}
 	}
 
+	h2 {
+		padding-top: $spacing-unit;
+	}
+
 	li {
 		margin: 0;
 		padding: 0;
@@ -162,30 +185,51 @@ section {
 
 	figure {
 		width: 100%;
-		padding: 0 0 $spacing-unit 0;
-		img {
-			width: 90%;
-			margin: 0 auto $spacing-unit;
-		}
+		margin-top: $spacing-unit;
+		padding: $spacing-unit 0;
 		a {
 			display: block;
 			width: 90%;
 			margin: 0 auto;
 			img {
-				width: 100%;
-				margin: 0 auto $spacing-unit;
+				max-width: 100%;
 			}
+		}
+		img {
+			max-width: 90%;
+			margin: 0 auto $spacing-unit;
 		}
 		figcaption {
 			a {
 				display: inline;
 				width: 100%;
 			}
+			p.design {
+				width: 90%;
+				margin: 0 auto;
+				a {
+					color: $brand-color;
+					font-weight: 700;
+				}
+			}
 		}
 		p {
 			width: 66%;
 			margin-right: auto;
 			margin-left: auto;
+			margin-bottom: $spacing-unit / 4;
+		}
+		&.sketch {
+			border-top: $border-dashed;
+			margin-top: $spacing-unit * 2;
+			figcaption {
+				border-top: $border-dashed;
+				margin-top: $spacing-unit;
+				padding-top: $spacing-unit;
+			}
+		}
+		&:first-of-type {
+			margin-top: $spacing-unit / 2;
 		}
 	}
 
@@ -200,10 +244,6 @@ section {
 		margin: 0.5% $spacing-unit 0 0;
 	}
 
-}
-
-article {
-	padding-top: $spacing-unit;
 }
 
 article.projects {
@@ -245,8 +285,50 @@ article.projects {
 		}
 
 		figure {
+			overflow: hidden;
 			width: 100%;
 			padding: 0;
+			a {
+				width: 100%;
+				img {
+					margin: $spacing-unit 0 0;
+					margin-left: -50%;
+					max-width: 200%;
+					&.skinny {
+						max-width: 90%;
+						margin: $spacing-unit auto 0;
+					}
+					&.technical {
+						max-width: 200%;
+						margin-left: -10%;
+					}
+				}
+			}
+			img {
+				margin: $spacing-unit 0 0;
+				margin-left: -50%;
+				max-width: 200%;
+				&.skinny {
+					max-width: 90%;
+					margin: $spacing-unit auto 0;
+				}
+				&.technical {
+					max-width: 200%;
+					margin-left: -10%;
+				}
+				&.landing {
+					max-width: 150%;
+					margin-left: -20%;
+				}
+			}
+			figcaption {
+				margin-right: $spacing-unit / 2;
+				margin-left: $spacing-unit / 2;
+				p.design {
+					width: 100%;
+					margin: $spacing-unit / 2 auto 0;
+				}
+			}
 			p {
 				width: 100%;
 				margin: $spacing-unit/2 0%;
@@ -265,33 +347,50 @@ article.projects {
 
 	}
 
-	article.projects {
-		.title {
-			width: 100%;
-			margin: $spacing-unit 0 $spacing-unit;
-			float: none;
-		}
-		.description {
-			width: 100%;
-			margin: $spacing-unit 0 $spacing-unit*4;
-			float: none;
-		}
-		figcaption ul {
-			border-top: $border-solid;
-			border-bottom: $border-solid;
-			margin: $spacing-unit/1.5 0;
-			padding: $spacing-unit/4 0;
-			width: 100%;
-			li {
-				margin: $spacing-unit/8 0 0;
-				&:last-of-type {
-					padding-bottom: $spacing-unit/4;
-				}
+	article {
+		padding-top: 0;
+		figure:first-of-type {
+			margin-top: 0;
+			margin-bottom: $spacing-unit;
+			img {
+				margin-top: 0;
 			}
 		}
-		p {
-			width: 100%;
-			margin: $spacing-unit/2 0%;
+		&.projects {
+			.title {
+				width: 100%;
+				margin: $spacing-unit 0 $spacing-unit;
+				float: none;
+			}
+			.description {
+				width: 100%;
+				margin: $spacing-unit 0 $spacing-unit*4;
+				float: none;
+			}
+			figcaption ul {
+				border-top: $border-solid;
+				border-bottom: $border-solid;
+				margin: $spacing-unit/1.5 0;
+				padding: $spacing-unit/4 0;
+				width: 100%;
+				li {
+					margin: $spacing-unit/8 0 0;
+					&:last-of-type {
+						padding-bottom: $spacing-unit/4;
+					}
+				}
+			}
+			p {
+				width: 100%;
+				margin: $spacing-unit/2 0%;
+			}
+			figure:first-of-type {
+				margin-top: 0;
+				margin-bottom: $spacing-unit;
+				img {
+					margin-top: 0;
+				}
+			}
 		}
 	}
 }
@@ -304,7 +403,7 @@ article.projects {
 .inset-post {
 	figure.tall {
 		@include calc(width, "50% - (#{$spacing-unit} / 2)");
-		float:left;
+		float: left;
 		padding: $spacing-unit*2 0;
 		img {
 			border: none;
@@ -331,13 +430,20 @@ article.projects {
 
 @include media-query($on-palm) {
 	.inset-post {
+		figure:first-of-type {
+			margin-top: 0;
+			margin-bottom: $spacing-unit;
+			img {
+				margin-top: 0;
+			}
+		}
 		figure.tall {
-			@include calc(width, "100% - (#{$spacing-unit} / 2)");
-			margin-left: 0;
+			@include calc(width, "100% - (#{$spacing-unit})");
+			margin-left: $spacing-unit / 2;
 		}
 		div.tall {
-			@include calc(width, "100% - (#{$spacing-unit} / 2)");
-			margin: 0;
+			@include calc(width, "100% - (#{$spacing-unit})");
+			margin-left: $spacing-unit / 2;
 			padding: 0;
 		}
 	}

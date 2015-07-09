@@ -34,6 +34,14 @@ p, blockquote, pre,
 ul, ol, dl, figure,
 %vertical-rhythm {
 	margin-bottom: $spacing-unit / 2;
+	&::selection {
+		color: #fff;
+  	background: $brand-color;
+	}
+	&::-moz-selection {
+		color: #fff;
+  	background: $brand-color;
+	}
 }
 
 
@@ -45,6 +53,9 @@ img {
 	max-width: 100%;
 	vertical-align: middle;
 	border-radius: 2px;
+	@include media-query($on-palm) {
+		border-radius: 0;
+	}
 }
 
 
@@ -115,6 +126,11 @@ h5, h6 {
 	font-size: $base-font-size;
 }
 
+sup {
+	vertical-align: top;
+	position: relative;
+}
+
 @include media-query($on-palm) {
 	h1 {
 		line-height: 1.2em
@@ -129,7 +145,7 @@ h5, h6 {
 a {
 	color: $text-color;
 	text-decoration: none;
-	transition: color 0.3s ease-in-out;
+	transition: color 0.2s ease-out;
 
 	&:visited {
 		color: darken($text-color, 5%);
@@ -192,19 +208,17 @@ pre {
  * Wrapper
  */
 .row {
-	max-width: -webkit-calc(1000px - (#{$spacing-unit} * 2));
-	max-width:         calc(1000px - (#{$spacing-unit} * 2));
+	max-width: calc(1000px - (#{$spacing-unit} * 2));
 	margin-right: auto;
 	margin-left: auto;
 	padding-right: $spacing-unit;
 	padding-left: $spacing-unit;
 	@extend %clearfix;
 
-	@include media-query($on-laptop) {
-		max-width: -webkit-calc(1000px - (#{$spacing-unit}));
-		max-width:         calc(1000px - (#{$spacing-unit}));
-		padding-right: $spacing-unit / 2;
-		padding-left: $spacing-unit / 2;
+	@include media-query($on-palm) {
+		max-width: 100%;
+		padding-right: 0;
+		padding-left: 0;
 	}
 }
 
@@ -249,12 +263,28 @@ pre {
 	}
 }
 
+
 /**
  * UTILITY CLASSES
  */
 
 .f--r {
 	float: right;
+}
+
+/**
+ * TRANSITIONS
+ */
+
+@keyframes pulse {
+	0%   	{ top: 2px; }
+  50% 	{ top: -1px; }
+  100% 	{ top: 2px; }
+}
+.anchor {
+  animation: pulse 1s infinite;
+	position: relative;
+	color: $brand-color;
 }
 
 
