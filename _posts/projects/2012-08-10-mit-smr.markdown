@@ -1,0 +1,71 @@
+---
+layout:     project
+title:      "MIT SMR"
+date:       2012-08-10 1:02:02
+categories: projects
+img:        img/projects/mit/MIT-tablet-10.jpg
+thumb:      img/projects/mit/pre-2013-MIT.jpg
+type:       Overview
+roles:
+  - User Experience
+  - Mobile Web UI
+  - Custom Icon Font
+
+---
+
+In the interest of keeping readers engaged, MIT’s Sloan Management Review undertook a project of massive proportions – moving all content to a uniform digital existence. I was brought in at the earliest stages of the project to work on the User Experience and Visual Design. I stayed engaged until the site was built. I handled all of the assets for the front end. That included creating a custom icon web font.
+
+## The Process
+
+We asked questions, a lot of questions. What does it means to be a magazine in the digital age? What format could we rely on to serve these articles? What content is still relevant? This approach led to much of our time being spent refining the reading experience and ultimately on a layout framework.
+
+Two Thousand Twelve saw the "responsive" movement taking root at all levels of content. This project was focussed on tablet reading, bridging the gap between the print version of the magazine and the web presence. I had a blast designing our workflow for such a big project with so many viewport specs.
+
+<figure id="fig1" class="linked">
+  <img src="{{ site.url }}/img/projects/mit/MIT-tablet-600-01.jpg" alt="">
+</figure>
+
+<figure id="fig2" class="linked">
+  <img src="{{ site.url }}/img/projects/mit/MIT-tablet-600-02.jpg" alt="">
+</figure>
+
+<figure id="fig3" class="linked">
+  <img src="{{ site.url }}/img/projects/mit/MIT-tablet-600-03.jpg" alt="">
+</figure>
+
+<figure id="fig4" class="linked">
+  <img src="{{ site.url }}/img/projects/mit/MIT-tablet-600-04.jpg" alt="">
+</figure>
+
+<figure id="fig5" class="linked">
+  <img src="{{ site.url }}/img/projects/mit/MIT-tablet-600-05.jpg" alt="">
+</figure>
+
+<figure id="fig6" class="linked">
+  <img src="{{ site.url }}/img/projects/mit/MIT-tablet-600-06.jpg" alt="">
+  <figcaption>
+    <p><em>(fig. 1)</em></p>
+    <p>With myriad layout dimensions and resolutions as a target all assets had to be vectors. That proved really fun for a person so enamoured with type. These are the highlights of the layout for the article views (@600px). We tried to stay true to the magazine's stark layout and simple type treatments.</p>
+    <p>The toughest part of the whole project was defining the site's structure. With years of changing section names and content design we had to try to fit all of the best parts into a our small menu. This is one of the issues that we all struggle with every day, naming things is hard. The solution was 3 big sections based on historical content divisions from the printed magazine.</p>
+  </figcaption>
+</figure>
+
+<figure id="fig7">
+  <img src="{{ site.url }}/img/projects/mit/MIT-tablet-600-07.jpg" alt="">
+  <figcaption>
+    <p><em>(fig. 2)</em></p>
+    <p>Paywalls suck, we tried to make a better one. The closest we got was very well defined pricing tiers. I liked being able to make this seem really custom with icons for each benefit. I was only around for the first few months after launch, but there was a marked uptick in subscriptions across the board.</p>
+  </figcaption>
+</figure>
+
+<figure id="fig8" class="linked">
+  <img src="{{ site.url }}/img/projects/mit/MIT-tablet-600-08.jpg" alt="">
+</figure>
+
+<figure id="fig9" class="linked">
+  <img src="{{ site.url }}/img/projects/mit/MIT-tablet-600-09.jpg" alt="">
+  <figcaption>
+    <p><em>(fig. 3)</em></p>
+    <p>Early wires of the aritcle layout. Very early on we were encouraged to find a better way to include ads. This made the "responsive" part of this project trickier since we were stuck with th standard IAB ad sizes of the time.</p>
+  </figcaption>
+</figure>

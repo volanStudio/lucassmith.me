@@ -1,10 +1,11 @@
 ---
 layout:     project
 title:      "Weld"
-date:       2015-06-23 1:02:02
+date:       2014-10-10 1:02:02
 categories: projects
-img:        Weld-0.9-00-action.jpg
-thumb:      thumb-Weld-0.9.jpg
+img:        img/projects/weld-0.9/Weld-0.9-00-action.jpg
+thumb:      img/projects/weld-0.9/thumb-Weld-0.9.jpg
+type:       Case Study
 roles:
   - User Experience
   - Mobile UI
@@ -23,7 +24,7 @@ A very high percentage of users complained (in an informal study) that getting a
 We white boarded, chatted, and sketched feverishly for a week to validate assumptions that this was the first problem to tackle. It was messy, contentious, and pretty fun. We eventually realized we were coming back to a really early sketch [(fig. 1)](#fig1) to "proof" our newest ideas.
 
 <figure class="sketch" id="fig1">
-  <img src="{{ site.url }}/img/Weld-0.9-01-wire.jpg" alt="" class="technical">
+  <img src="{{ site.url }}/img/projects/weld-0.9/Weld-0.9-01-wire.jpg" alt="" class="technical">
   <figcaption>
     <p><em>(fig. 1)</em></p>
     <p>My earliest sketches always come back to a UI flow shorthand (ht <a href="https://signalvnoise.com/posts/1926-a-shorthand-for-designing-ui-flows" alt="UI shorthand">Ryan Singer</a>).</p>
@@ -33,7 +34,7 @@ We white boarded, chatted, and sketched feverishly for a week to validate assump
 After this initial phase of ideation, I iterated for weeks on wireframes, flows, layouts, and UI designs. The engineering team set about building the backend to handle the product shift. We jettisoned lots of code for the other "triggers" we had built for [Osito]({{site.url}}/projects/osito). Here are some of the UI iterations for a date/time picker. Calendar inline with email just feels right, although some of these are hastily sketched ideas.
 
 <figure id="fig2">
-  <img src="{{ site.url }}/img/Weld-0.9-02-ui.jpg" alt="">
+  <img src="{{ site.url }}/img/projects/weld-0.9/Weld-0.9-02-ui.jpg" alt="">
   <figcaption>
     <p><em>(fig. 2)</em></p>
     <p>UI designs were tricky. A colorful saying is "trying to fit 10lb of s!$@ into a 5lb bag". It was eventually wrangled into a manageable state through contextual computing.</p>
@@ -45,7 +46,7 @@ After this initial phase of ideation, I iterated for weeks on wireframes, flows,
 We built lots of prototypes in framer (before it was an app) and in iOS. This is actually where I picked up programming for iOS. We struggled to find a great iOS engineer to join the team. In the interim, I decided to learn as much as I could about UIKit. I was able to turn these prototypes into shippable code.
 
 <figure id="fig3">
-  <img src="{{ site.url }}/img/Weld-0.9-03-ios.gif" alt="" width="320" class="skinny">
+  <img src="{{ site.url }}/img/projects/weld-0.9/Weld-0.9-03-ios.gif" alt="" width="320" class="skinny">
   <figcaption>
     <p><em>(fig. 3)</em></p>
     <p>I built something with Xcode <em>and it now lives in the app store</em>. It is messy, but it works and it was so much fun to create.</p>
@@ -67,7 +68,7 @@ The changes are certainly worthy of a fresh case study :).
 ## Design Details
 
 <figure id="fig4">
-  <img src="{{ site.url }}/img/Weld-0.9-09-CalendarPicker.jpg" alt="">
+  <img src="{{ site.url }}/img/projects/weld-0.9/Weld-0.9-09-CalendarPicker.jpg" alt="">
   <figcaption>
     <p><em>(fig. 4)</em></p>
     <p>Calendar picker (v0.3), (v0.7), and (v0.9).</p>
@@ -76,7 +77,7 @@ The changes are certainly worthy of a fresh case study :).
 </figure>
 
 <figure id="fig5">
-  <img src="{{ site.url }}/img/Weld-0.9-08-Suggestion.jpg" alt="">
+  <img src="{{ site.url }}/img/projects/weld-0.9/Weld-0.9-08-Suggestion.jpg" alt="">
   <figcaption>
     <p><em>(fig. 5)</em></p>
     <p>Proposal Received flow (v1.0).</p>
@@ -85,7 +86,7 @@ The changes are certainly worthy of a fresh case study :).
 </figure>
 
 <figure id="fig6">
-  <img src="{{ site.url }}/img/Weld-0.9-07-welcomeFlow.jpg" alt="">
+  <img src="{{ site.url }}/img/projects/weld-0.9/Weld-0.9-07-welcomeFlow.jpg" alt="">
   <figcaption>
     <p><em>(fig. 6)</em></p>
     <p>Early welcomeflow (v0.7).</p>
@@ -94,7 +95,7 @@ The changes are certainly worthy of a fresh case study :).
 </figure>
 
 <figure id="fig7">
-  <img src="{{ site.url }}/img/Weld-0.9-06-schedulingFlow.jpg" alt="">
+  <img src="{{ site.url }}/img/projects/weld-0.9/Weld-0.9-06-schedulingFlow.jpg" alt="">
   <figcaption>
     <p><em>(fig. 7)</em></p>
     <p>Scheduling flow for multiple users (v0.5).</p>
@@ -103,7 +104,7 @@ The changes are certainly worthy of a fresh case study :).
 </figure>
 
 <figure id="fig8">
-  <img src="{{ site.url }}/img/Weld-0.9-05-shipped.jpg" alt="">
+  <img src="{{ site.url }}/img/projects/weld-0.9/Weld-0.9-05-shipped.jpg" alt="">
   <figcaption>
     <p><em>(fig. 8)</em></p>
     <p>App store screenshots (v0.9).</p>
@@ -116,7 +117,7 @@ The changes are certainly worthy of a fresh case study :).
 I designed and built the responsive website for this app as well (jekyll, sass, js, and \<video\>) and executed all of the marketing materials (emails, press kit, etc.). [It is live](http://www.weldai.com) for a short while longer (maybe until Aug. 2015) - I'll try to archive it somewhere. Once the link is gone these images will serve as proof of its existence.
 
 <figure id="fig9">
-  <img src="{{ site.url }}/img/Weld-0.9-10-landing.jpg" alt="">
+  <img src="{{ site.url }}/img/projects/weld-0.9/Weld-0.9-10-landing.jpg" alt="">
   <figcaption>
     <p><em>(fig. 9)</em></p>
     <p>The site features some autoplaying video tags and smoe fonts form typography.com. I'm in love with Whitney. Heck, even this is set in Whitney.</p>
@@ -124,7 +125,7 @@ I designed and built the responsive website for this app as well (jekyll, sass, 
 </figure>
 
 <figure id="fig10">
-  <img src="{{ site.url }}/img/Weld-0.9-11-features.jpg" alt="">
+  <img src="{{ site.url }}/img/projects/weld-0.9/Weld-0.9-11-features.jpg" alt="">
   <figcaption>
     <p><em>(fig. 10)</em></p>
     <p>These layouts were driven by trying to optimize viewing on desktop and on mobile with the same assets. Videos are big and we didn't have the time or resources to build an adaptive site, so we opted for full responsive.</p>
@@ -132,7 +133,7 @@ I designed and built the responsive website for this app as well (jekyll, sass, 
 </figure>
 
 <figure id="fig11">
-  <img src="{{ site.url }}/img/Weld-0.9-12-responsive.jpg" alt="">
+  <img src="{{ site.url }}/img/projects/weld-0.9/Weld-0.9-12-responsive.jpg" alt="">
   <figcaption>
     <p><em>(fig. 11)</em></p>
     <p>Responsive layouts of the two above pages, respectively. During development of the site the iPhone 6 and 6+ were released. I moved the main nav to the bottom of the responsive pages in an effort to make it more hittable on the larger form factor.</p>

@@ -1,10 +1,11 @@
 ---
 layout:     project
 title:      "Osito"
-date:       2014-10-30 1:02:02
+date:       2013-06-30 1:02:02
 categories: projects
-img:        Osito-1-action.jpg
-thumb:      thumb-Osito.jpg
+img:        img/projects/osito/Osito-1-action.jpg
+thumb:      img/projects/osito/thumb-Osito.jpg
+type:       Case Study
 roles:
   - User Experience
   - Mobile UI
@@ -34,7 +35,7 @@ The goal was twofold &ndash; give the user a block they could remember and simpl
 People were less happy about with our communication of upcoming events. These half-baked triggers were just that; half-baked as-in we can't predict traffic. The result is either too many notifications or omitting these notifications entirely.
 
 <figure>
-  <img src="{{ site.url }}/img/Osito-2-cards.jpg">
+  <img src="{{ site.url }}/img/projects/osito/Osito-2-cards.jpg">
   <figcaption>
     <p><em>(fig. 1)</em> I tried to capture the fun in these interactions with color and layout. This was early days of "Proactive Computing" for consumers. Osito always tried to be friendly first.</p>
   </figcaption>
@@ -59,7 +60,7 @@ This started to come together over a few weeks in January/February of 2013. We w
 </div>
 
 <figure class="tall">
-  <img src="{{ site.url }}/img/Osito-4-lookahead.gif" width="320">
+  <img src="{{ site.url }}/img/projects/osito/Osito-4-lookahead.gif" width="320">
   <figcaption>
     <p><em>(fig. 2)</em> This is an animated gif that was built to illustrate the concept to the team.</p>
   </figcaption>
@@ -74,35 +75,35 @@ Osito was an attempt to simplify interacting with your phone and became an act o
 While I typically start with wireframes, this project warranted a different approach. Features were sketched on whiteboards and occasionally paper. Those were then put through the photoshop wringer almost immediately. It made for some fast turnarounds, but process is a thing that you need to weigh when moving this fast.
 
 <figure class="details">
-  <img src="{{ site.url }}/img/Osito-4-marketing.jpg">
+  <img src="{{ site.url }}/img/projects/osito/Osito-4-marketing.jpg">
   <figcaption>
     <p><em>(fig. 3)</em> App Store Feature: Fun stuff around the brand. The original name was Sherpa, but when we found out we'd be featured all of our assets were in this vein and we ended up just swapping the name since we had ~12 hours lead-time to make the change.</p>
   </figcaption>
 </figure>
 
 <figure class="details">
-  <img src="{{ site.url }}/img/Osito-5-wires.jpg">
+  <img src="{{ site.url }}/img/projects/osito/Osito-5-wires.jpg">
   <figcaption>
     <p><em>(fig. 4)</em> The first project I worked on was an attempt to wire frame the details we needed for each card. I started in grayscale as "wires". Clearly no one would think that we'd be using Tungsten in a native app.</p>
   </figcaption>
 </figure>
 
 <figure class="details">
-  <img src="{{ site.url }}/img/Osito-6-welcome.jpg">
+  <img src="{{ site.url }}/img/projects/osito/Osito-6-welcome.jpg">
   <figcaption>
     <p><em>(fig. 5)</em> The earliest welcome flow, in fact you can see the original branding. This design was a result of our first whiteboard session with the whole team.</p>
   </figcaption>
 </figure>
 
 <figure class="details">
-  <img src="{{ site.url }}/img/Osito-8-flight-day-before.jpg">
+  <img src="{{ site.url }}/img/projects/osito/Osito-8-flight-day-before.jpg">
   <figcaption>
     <p><em>(fig. 6)</em> Prompting users the day before an event was a huge part of the experience. Presenting actions that were simple to execute.</p>
   </figcaption>
 </figure>
 
 <figure class="details last">
-  <img src="{{ site.url }}/img/Osito-7-action.jpg">
+  <img src="{{ site.url }}/img/projects/osito/Osito-7-action.jpg">
   <figcaption>
     <p><em>(fig. 7)</em> Push notification were one of the major interfaces for the app. The team kept a running spreadsheet with new phrases to try to capture the spirit of Osito.</p>
   </figcaption>
@@ -115,14 +116,14 @@ I went looking for comps of the site and I can't find any; I think this was comp
 This was my first experience with Jekyll + SASS. Our iOS engineer was a big fan of Jekyll. I had heard of SASS before, but the combo really is amazing. They are still a big part of my workflow for web projects.
 
 <figure class="details">
-  <img src="{{ site.url }}/img/Osito-9-website.jpg">
+  <img src="{{ site.url }}/img/projects/osito/Osito-9-website.jpg">
   <figcaption>
     <p><em>(fig. 8)</em> Simple layout, strong call to action</p>
   </figcaption>
 </figure>
 
 <figure class="details">
-  <img src="{{ site.url }}/img/Osito-11-website.gif">
+  <img src="{{ site.url }}/img/projects/osito/Osito-11-website.gif">
   <figcaption>
     <p><em>(fig. 9)</em> This slider was awesome for explaining the cards and the underlying tech.</p>
   </figcaption>

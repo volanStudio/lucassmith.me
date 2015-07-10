@@ -9,9 +9,9 @@ layout: projects
 
           {% if page.img %}
           <figure>
-            <img src="{{site.url}}/img/{{page.img}}" alt="">
+            <img src="{{site.url}}/{{page.img}}" alt="">
             <figcaption>
-              <p class="design"><a href="#design-details">More Images</a> <span class="anchor"> &#8675;</span></p>
+              <p class="design"><a href="{% if page.type contains 'Overview' %}#fig1{%else%}#design-details{%endif%}">More Images</a> <span class="anchor"> &#8675;</span></p>
             </figcaption>
           </figure>
           {% endif %}
