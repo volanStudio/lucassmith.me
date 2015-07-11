@@ -252,25 +252,29 @@ section {
 article.projects {
 	.title {
 		width: 30%;
-		margin: $spacing-unit 5% $spacing-unit*4 5%;
+		margin: $spacing-unit 5% $spacing-unit 5%;
 		float: left;
 	}
 	.description {
 		width: 55%;
-		margin: $spacing-unit 5% $spacing-unit*4 0;
+		margin: $spacing-unit 5% $spacing-unit 0;
 		float: left;
 	}
 	p {
 		margin: $spacing-unit/4 0;
 		width: 100%;
 	}
-	figcaption ul {
-		border-top: $border-solid;
-		margin: $spacing-unit*1.25 0 0;
-		padding: $spacing-unit/4 0 0;
-		width: 100%;
-		li {
-			margin: $spacing-unit/8 0 0;
+	figure {
+		display: block;
+		@extend %clearfix;
+		figcaption ul {
+			border-top: $border-solid;
+			margin: $spacing-unit*1.25 0 0;
+			padding: $spacing-unit/4 0 0;
+			width: 100%;
+			li {
+				margin: $spacing-unit/8 0 0;
+			}
 		}
 	}
 
@@ -291,11 +295,13 @@ article.projects {
 			overflow: hidden;
 			width: 100%;
 			padding: 0;
+			&.linked {
+				margin: $spacing-unit / 4 0 0;
+			}
 			a {
 				width: 100%;
 				img {
-					margin: $spacing-unit 0 0;
-					margin-left: -50%;
+					margin: $spacing-unit 0 0 -50%;
 					max-width: 200%;
 					&.skinny {
 						max-width: 90%;
@@ -322,6 +328,10 @@ article.projects {
 				&.landing {
 					max-width: 150%;
 					margin-left: -20%;
+				}
+				&.normal{
+					max-width: 100%;
+					margin: 0;
 				}
 			}
 			figcaption {
@@ -360,6 +370,7 @@ article.projects {
 			}
 		}
 		&.projects {
+			padding-bottom: $spacing-unit;
 			.title {
 				width: 100%;
 				margin: $spacing-unit 0 $spacing-unit;
@@ -367,7 +378,7 @@ article.projects {
 			}
 			.description {
 				width: 100%;
-				margin: $spacing-unit 0 $spacing-unit*4;
+				margin: $spacing-unit 0 $spacing-unit;
 				float: none;
 			}
 			figcaption ul {
