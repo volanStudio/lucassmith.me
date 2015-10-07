@@ -198,6 +198,16 @@ section {
 		img {
 			max-width: 90%;
 			margin: 0 auto $spacing-unit;
+			&.wallpaper {
+				display: inline-block;
+				max-width: 33%;
+			}
+		}
+		video {
+			display: block;
+			margin: 0 auto $spacing-unit;
+			border: $border-solid;
+			border-radius: 6px;
 		}
 		figcaption {
 			a {
@@ -233,6 +243,9 @@ section {
 		}
 		&:first-of-type {
 			margin-top: $spacing-unit / 2;
+		}
+		&.video {
+			margin-top: $spacing-unit * 2;
 		}
 	}
 
@@ -329,7 +342,7 @@ article.projects {
 					max-width: 150%;
 					margin-left: -20%;
 				}
-				&.normal{
+				&.normal, &.wallpaper {
 					max-width: 100%;
 					margin: 0;
 				}

@@ -12,3 +12,5 @@ github_username:  volanStudio
 markdown: kramdown
 permalink: /:categories/:title
 exclude: ['s3_website.yml', 'README.md']
+sass:
+  style: :compressed
