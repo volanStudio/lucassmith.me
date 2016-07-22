@@ -1,9 +1,12 @@
 <header>
   <div class="row">
-    <a href="{{site.url}}/">Lucas Smith, Designer</a>
+    <a href="{{site.url}}/" class="logo">Lucas Smith, Designer</a>
+    {% if page.categories contains 'projects' %}
+    <p><span class="on-desktop">{{ page.type }}: </span>{{ page.title }}</p>
+    {% endif %}
     <nav class="site_nav">
       <ul>
-        <li><a href="{{site.url}}/projects">Projects</a></li>
+        <li><a href="{{site.url}}/projects" {% if page.url == "/projects/" %}class="active"{% endif %}>Projects</a></li>
         <li><a href="mailto:lucas@volan.co">Contact</a></li>
         {% include header-social.html %}
       </ul>

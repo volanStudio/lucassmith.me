@@ -10,6 +10,25 @@ header {
 		display: block;
 		float: left;
 	}
+	a {
+		color: $text-color;
+		text-decoration: none;
+		transition: color 0.2s ease;
+		&:visited {
+			color: $text-color;
+		}
+		&:hover {
+			color: $brand-color;
+		}
+		&.active {
+			color: $text-color;
+			border-top: $brand-color;
+		}
+		&.logo {
+			color: $text-color;
+		}
+	}
+
 	p {
 		float: right;
 		margin: 0;
@@ -42,12 +61,16 @@ header {
 			}
 		}
 		.f--r a {
-			margin-right: 0.1em;
-			margin-left: 0.65em;
+			margin-right: 0;
+			margin-left: 1em;
 		}
-		.active {
-			color: darken($text-color, 15%);
-			border-top: $border-dark;
+		img {
+			top: -2px;
+			position: relative;
+		}
+		.dribbble img {
+			top: -1px;
+			left: -1px;
 		}
 	}
 }
@@ -105,16 +128,6 @@ footer {
 			img {
 				width: 20px;
 				margin-top: - 1px;
-			}
-		}
-		a {
-			color: $grey-color-medium;
-			&:hover {
-				text-decoration: underline;
-				color: $text-color;
-			}
-			&:visited {
-				color: $grey-color-medium;
 			}
 		}
 	}
@@ -219,7 +232,7 @@ section {
 				margin: 0 auto;
 				a {
 					color: $brand-color;
-					font-weight: 700;
+					font-weight: $header-font-weight;
 				}
 			}
 		}

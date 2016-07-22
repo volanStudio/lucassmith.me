@@ -72,7 +72,7 @@ The changes are certainly worthy of a fresh case study :).
   <figcaption>
     <p><em>(fig. 4)</em></p>
     <p>Calendar picker (v0.3), (v0.7), and (v0.9).</p>
-    <p>One of the omly truly custom UI components was a draggable calendar picker. It had many iterations, I've included 1.5 of them here. This was one of the items that got prototyped the most. Nailing the feel of picking a time naturally on a mobile screen was surprisingly complex. After designing the "dragger" a popular calendar app shipped a very similar component. </p>
+    <p>One of the only truly custom UI components was a draggable calendar picker. It had many iterations, I've included 1.5 of them here. This was one of the items that got prototyped the most. Nailing the feel of picking a time naturally on a mobile screen was surprisingly complex. After designing the "dragger" a popular calendar app shipped a very similar component. </p>
   </figcaption>
 </figure>
 
@@ -90,7 +90,7 @@ The changes are certainly worthy of a fresh case study :).
   <figcaption>
     <p><em>(fig. 6)</em></p>
     <p>Early welcomeflow (v0.7).</p>
-    <p>I'd eventually code and ship this - my first real forray into iOS engineering. These screens show the same headline, but the animation btween hand states was advanced with a swipe. I should really make a gif of this...</p>
+    <p>I'd eventually code and ship this - my first real foray into iOS engineering. These screens show the same headline, but the animation between hand states was advanced with a swipe. I should really make a gif of this...</p>
   </figcaption>
 </figure>
 
@@ -120,7 +120,7 @@ I designed and built the responsive website for this app as well (jekyll, sass, 
   <img src="{{ site.url }}/img/projects/weld-0.9/Weld-0.9-10-landing.jpg" alt="">
   <figcaption>
     <p><em>(fig. 9)</em></p>
-    <p>The site features some autoplaying video tags and smoe fonts form typography.com. I'm in love with Whitney. Heck, even this is set in Whitney.</p>
+    <p>The site features some autoplaying video tags and some fonts from typography.com. I'm in love with Whitney.</p>
   </figcaption>
 </figure>
 
@@ -139,5 +139,3 @@ I designed and built the responsive website for this app as well (jekyll, sass, 
     <p>Responsive layouts of the two above pages, respectively. During development of the site the iPhone 6 and 6+ were released. I moved the main nav to the bottom of the responsive pages in an effort to make it more hittable on the larger form factor.</p>
   </figcaption>
 </figure>
-
-

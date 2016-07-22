@@ -14,12 +14,13 @@ dl, dd, ol, ul, figure {
  * Basic styling
  */
 body {
-	font-family: $base-font-family;
-	font-size: $base-font-size;
-	line-height: $base-line-height;
-	font-weight: $base-font-weight;
 	color: $text-color;
 	background-color: $background-color;
+	font-family: $base-font-family;
+	font-size: $base-font-size;
+	font-weight: $base-font-weight;
+	line-height: $base-line-height;
+	letter-spacing: $base-letter-spacing;
 	-webkit-text-size-adjust: 100%;
 	-webkit-font-smoothing: antialiased;
 }
@@ -96,6 +97,7 @@ h1, h2, h3 {
 	font-family: $header-font-family;
 	font-weight: $header-font-weight;
 	line-height: $header-line-height;
+	letter-spacing: $header-letter-spacing;
 	color: $header-color;
 }
 
@@ -113,17 +115,11 @@ h3 {
 
 h4, h5, h6 {
 	font-family: $base-font-family;
-	font-weight: $base-font-weight;
-	line-height: $base-line-height;
-	color: $header-color;
-}
-
-h4 {
 	font-size: $base-font-size * 1.25;
-}
-
-h5, h6 {
-	font-size: $base-font-size;
+	font-weight: $header-font-weight;
+	line-height: $base-line-height;
+	letter-spacing: $base-letter-spacing;
+	color: $header-color;
 }
 
 sup {
@@ -143,17 +139,23 @@ sup {
 /**
  * Links
  */
+
 a {
-	color: $text-color;
+	color: $brand-color;
 	text-decoration: none;
-	transition: color 0.2s ease-out;
-
+	transition: color 0.2s ease;
 	&:visited {
-		color: darken($text-color, 5%);
+		color: $brand-color;
 	}
-
 	&:hover {
-		color: darken($text-color, 10%);
+		color: $brand-color-dark;
+	}
+	&.active {
+		color: $brand-color-dark;
+		border-top: $brand-color;
+	}
+	&.logo {
+		color: $text-color;
 	}
 }
 
@@ -283,7 +285,7 @@ pre {
   100% 	{ top: 2px; }
 }
 .anchor {
-  animation: pulse 1s infinite;
+  // animation: pulse 1s infinite;
 	position: relative;
 	color: $brand-color;
 }
