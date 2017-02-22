@@ -1,0 +1,18 @@
+<header>
+  <div class="row">
+    <a href="{{site.url}}/">Lucas Smith, Designer</a>
+    {% if page.categories contains 'projects' %}
+    <p><span class="on-desktop">{{ page.type }}: </span>{{ page.title }}</p>
+    {% endif %}
+    {% if page.categories contains 'campaign' %}
+    <p><span class="on-desktop">{{ page.type }}: </span>{{ page.title }}</p>
+    {% endif %}
+    <nav class="site_nav">
+      <ul>
+        <li><a href="{{site.url}}/2016-campaign" class="active">2016 Campaign</a></li>
+        <li><a href="mailto:lucas@volan.co">Contact</a></li>
+        {% include header-social.html %}
+      </ul>
+    </nav>
+  </div>
+</header>

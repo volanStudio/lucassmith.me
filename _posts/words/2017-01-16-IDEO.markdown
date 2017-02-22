@@ -1,0 +1,27 @@
+---
+layout:     words
+title:      "IDEO Fellowship"
+date:       2017-01-16 12:00:00
+categories: words
+img:        img/projects/analyze/0.0-hero.png
+thumb:      img/projects/analyze/1-Analyze2.png
+
+---
+
+I wasn't sure what to expect, but I was extremely optimistic. I walked in to the first day thinking I was the outsider, the old guy who went to a normal, shitty college. The resumes and accolades of my colleagues were intimidating; I've got my fair share of imposter syndrome and it comes from being self taught.
+
+I expected to leave a more process-driven designer. That happened, but the process I left with was mine. IDEO has a way of galvanizing your thinking into new questions, the best answers at IDEO provoke tangential thoughts that re-frame the problem.
+
+This is iteration, this is every thinking person’s process defined and distilled. I leave with new confidence. I leave knowing that asking hard questions isn't the distraction, but that avoiding them is.
+
+I fell in love with the ethos. I am capable of most things, but knowing I had a safety net to fail spectacularly and that the result would be a better next time was strengthening. I leveraged facial recognition software to verify digital identity, I built on top of one of the more exciting web technologies I've seen in years, and I made a spreadsheet to provoke thoughts about efficiency. And I had fun doing it.
+
+Other topics I'd like to cover:
+
+- Orthogonal planning
+- Everyone is a designer
+- Computers are fun, fuck!
+- Am I an engineer?
+- What does it mean to belong?
+
+Don't get ready, get started. A mantra for the digital age.

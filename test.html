@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      /* http://meyerweb.com/eric/tools/css/reset/
+       v2.0 | 20110126
+       License: none (public domain)
+      */
+
+      html, body, div, span, applet, object, iframe,
+      h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+      a, abbr, acronym, address, big, cite, code,
+      del, dfn, em, img, ins, kbd, q, s, samp,
+      small, strike, strong, sub, sup, tt, var,
+      b, u, i, center,
+      dl, dt, dd, ol, ul, li,
+      fieldset, form, label, legend,
+      table, caption, tbody, tfoot, thead, tr, th, td,
+      article, aside, canvas, details, embed,
+      figure, figcaption, footer, header, hgroup,
+      menu, nav, output, ruby, section, summary,
+      time, mark, audio, video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+      }
+      /* HTML5 display-role reset for older browsers */
+      article, aside, details, figcaption, figure,
+      footer, header, hgroup, menu, nav, section {
+        display: block;
+      }
+      body {
+        line-height: 1;
+      }
+      ol, ul {
+        list-style: none;
+      }
+      blockquote, q {
+        quotes: none;
+      }
+      blockquote:before, blockquote:after,
+      q:before, q:after {
+        content: '';
+        content: none;
+      }
+      table {
+        border-collapse: collapse;
+        border-spacing: 0;
+      }
+
+      /* */
+
+      body {
+        color: rgba(0,0,0,0.64);
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        font-size: 18px;
+        letter-spacing: -0.01rem;
+        line-height: 1.4;
+      }
+
+      h1, h2, h3, h4, h5, h6, p, cite {
+        margin-bottom: 1rem;
+      }
+
+      h1, h2, h3 {
+        font-size: 1.75rem;
+        font-weight: 500;
+        letter-spacing: 0.02rem;
+      }
+
+      h4, h5, h6 {
+        font-size: 1.375rem;
+        font-weight: 500;
+        letter-spacing: 0.02rem;
+      }
+
+      a {
+        border-bottom: 1px solid rgba(255, 255, 255, 1.0);
+        color: rgba(0, 167, 231, 1.0);
+        text-decoration: none;
+        transition: all 0.2s ease;
+      }
+
+      a:hover {
+        border-bottom: 1px solid rgba(0, 167, 231, 1.0);
+      }
+
+      /*  */
+
+      nav, section, footer {
+        margin: 0 auto;
+        max-width: 64rem;
+      }
+
+      nav h1 {
+        font-size: 18px;
+        font-weight: 400;
+        letter-spacing: -0.01rem;
+        margin: 0;
+      }
+
+      nav a {
+        border-bottom: none;
+        color: rgba(0,0,0,0.64);
+        line-height: 5rem;
+        margin: 0 1.5rem 0 0;
+        text-decoration: none;
+      }
+
+      nav a:hover {
+        border-bottom: none;
+      }
+
+      nav span {
+        float: right;
+      }
+
+      nav span a {
+        margin: 0 0 0 1.5rem;
+      }
+
+      nav ul {
+        border-top: 1px solid rgba(0,0,0,0.12);
+      }
+
+      nav li {
+        display: inline-block;
+      }
+
+      /*  */
+
+      figure {
+        margin: 3rem auto 4rem;
+        max-width: 56rem;
+      }
+
+      img {
+        max-width: 100%;
+      }
+
+      article {
+        margin: 2rem auto 6rem;
+        max-width: 44rem;
+      }
+
+      /*  */
+
+      footer {
+        border-top: 1px solid rgba(0,0,0,0.12);
+        line-height: 5rem;
+      }
+
+      footer p {
+        display: inline-block;
+        margin-bottom: 0;
+      }
+
+      footer p:last-of-type {
+        float: right;
+      }
+
+      /*  */
+
+      @media screen and (max-width: 68rem) {
+        nav h1, nav ul, article, footer {
+          padding: 0 2rem;
+        }
+        figure {
+          margin: 0 auto 2rem;
+        }
+      }
+
+    </style>
+  </head>
+  <body>
+    <nav>
+      <h1>
+        <a href="">Lucas Smith, Designer</a>
+      </h1>
+      <ul>
+        <li><a href="">Projects</a></li>
+        <li><a href="">Conact</a></li>
+        <span class="social">
+          <li><a href="">Twitter</a></li>
+          <li><a href="">LinkedIn</a></li>
+          <li><a href="">Dribbble</a></li>
+        </span>
+      </ul>
+    </nav>
+    <section>
+      <figure>
+        <img src="http://lucassmith.me/img/rodeoBeach@2x.png" alt="" />
+      </figure>
+      <article>
+        <p>That's me with my sons - I'm a Designer. I design software for your phone, your desktop, and the internet.</p>
+        <h6>What am I doing now?</h6>
+        <p>I'm at <a href="http://www.earnest.com">Earnest</a> in San Francisco where I am a Product Designer. I get really excited about amplifying human abilities with computers – that drives me to create great experiences. I work on internal tools at Earnest and really enjoy delivering value to my coworkers. I'm always trying to use the fidelity that will best serve the project, that occasionally leads me to code<small><sup>1</sup></small>.</p>
+        <p>I love discussing just about anything related to design, product, or code. Feel free to <a href="mailto:lucas@volan.co">ask me about it</a>.</p>
+        <p><small><sup>1</sup>I have a <a href="http://compsci.cofc.edu/undergraduate-programs/computer-information-systems.php">degree in CS</a> and 12 years of professional experience as a designer.</small></p>
+        </article>
+    </section>
+    <footer>
+      <p>&copy; 2016</p>
+      <p>ad astra...</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+---
+layout: hidden
+---
+
+    <section>
+      <div class="row">
+
+        <article class="inset-post">
+
+          {% if page.img %}
+          <figure>
+            <img src="{{site.url}}/{{page.img}}" alt="">
+            <figcaption>
+              <p class="design"><a href="{% if page.type contains 'Overview' %}#fig1{%else%}#design-details{%endif%}">More Images</a> <span class="anchor"> &#8675;</span></p>
+            </figcaption>
+          </figure>
+          {% endif %}
+
+          {{ content }}
+
+        </article>
+
+      </div>
+    </section>
